@@ -14,7 +14,10 @@ body {
 	height: 100%;
 }
 .alert_outer-container.playing {
-	animation: 101s alert-animation ease-in-out forwards;
+    animation-fill-mode: forwards;
+    animation-name: alert-animation-slide-in, alert-animation-slide-out;
+    animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
 }
 .alert_widget-container {
 	display: flex;
@@ -43,36 +46,41 @@ body {
     flex-direction: column;
     width: 100%;
     position: relative;
+    margin: 20px;
     z-index: 1;
     max-height: 100%;
     max-width: 100%;
+    filter: drop-shadow(6px 6px 2px #121212) drop-shadow(6px -6px 2px #121212) drop-shadow(-6px 6px 2px #121212) drop-shadow(-6px -6px 2px #121212);
 }
 
 .alert_text {
     font-family: '8-bit Operator+', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #969696;
 	width: 100%;
-
 }
 
 .alert_secondary-text {
     font-family: '8-bit Operator+', sans-serif;
     font-size: 16px;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #969696;
     width: 100%;
-
 }
 
 .alert_text-accent {
-    color: #9146FF;
+    color: #5EBB00;
 }
 
 .alert_image {
     width: 100%;
     height: 100%;
+}
+
+.inline_emote {
+    height: 1.5em;
+    vertical-align: -0.2em;
 }
 
 .cheer-1 {
@@ -93,14 +101,18 @@ body {
 .cheer-100000 {
     color: #f3a71a;
 }
-@keyframes alert-animation {
+
+@keyframes alert-animation-slide-in {
     0% {
         left: -100%;
     }
-    0.8733624454148473% {
+    100% {
         left: 0;
     }
-    99.12663755458516% {
+}
+
+@keyframes alert-animation-slide-out {
+    0% {
         left: 0;
     }
     100% {
