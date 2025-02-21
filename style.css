@@ -182,25 +182,25 @@ body {
     animation-delay: 0s, 2.5s;
 }
 .trans_rights_color.trblue_top {
-    background-color: #5BCEFA;
+    background-color: #52bae1;
     animation-delay: 0s, 2.1s;
 }
 .trans_rights_color.trpink_top {
-    background-color: #F5A9B8;
+    background-color: #dd98a6;
     animation-name: alert-animation-slide-in-right, alert-animation-slide-out-left;
     animation-delay: 0.1s, 2.2s;
 }
 .trans_rights_color.trwhite {
-    background-color: #FFFFFF;
+    background-color: #e6e6e6;
     animation-delay: 0.2s, 2.3s;
 }
 .trans_rights_color.trpink_bottom {
-    background-color: #F5A9B8;
+    background-color: #dd98a6;
     animation-name: alert-animation-slide-in-right, alert-animation-slide-out-left;
     animation-delay: 0.3s, 2.4s;
 }
 .trans_rights_color.trblue_bottom {
-    background-color: #5BCEFA;
+    background-color: #52bae1;
     animation-delay: 0.4s, 2.5s;
 }
 
@@ -218,20 +218,20 @@ body {
     animation-delay: 0s, 2.5s;
 }
 .nonbinary_rights_color.nb_yellow {
-    background-color: #FCF434;
+    background-color: #ede631;
     animation-delay: 0s, 2.2s;
 }
 .nonbinary_rights_color.nb_white {
-    background-color: #FFFFFF;
+    background-color: #f0f0f0;
     animation-delay: 0.1s, 2.3s;
 }
 .nonbinary_rights_color.nb_purple {
-    background-color: #9C59D1;
+    background-color: #9354c5;
     animation-name: alert-animation-slide-in-left, alert-animation-slide-out-left;
     animation-delay: 0.2s, 2.4s;
 }
 .nonbinary_rights_color.nb_black {
-    background-color: #2C2C2C;
+    background-color: #292929;
     animation-name: alert-animation-slide-in-left, alert-animation-slide-out-left;
     animation-delay: 0.3s, 2.5s;
 }
@@ -250,30 +250,30 @@ body {
     animation-delay: 0s, 2.5s;
 }
 .queer_pride_color.queer_red {
-    background-color: #E40303;
+    background-color: #c90303;
     animation-delay: 0s, 0.9s;
 }
 .queer_pride_color.queer_orange {
-    background-color: #FF8C00;
+    background-color: #e17b00;
     animation-name: alert-animation-slide-in-right, alert-animation-slide-out-right;
     animation-delay: 0.3s, 1.2s;
 }
 .queer_pride_color.queer_yellow {
-    background-color: #FFED00;
+    background-color: #e1d100;
     height: 33.3334%;
     animation-delay: 0.6s, 1.5s;
 }
 .queer_pride_color.queer_green {
-    background-color: #008026;
+    background-color: #007122;
     animation-name: alert-animation-slide-in-right, alert-animation-slide-out-right;
     animation-delay: 0.9s, 1.8s;
 }
 .queer_pride_color.queer_indigo {
-    background-color: #004CFF;
+    background-color: #0043e1;
     animation-delay: 1.2s, 2.1s;
 }
 .queer_pride_color.queer_violet {
-    background-color: #732982;
+    background-color: #652473;
     height: 33.3334%;
     animation-name: alert-animation-slide-in-right, alert-animation-slide-out-right;
     animation-delay: 1.5s, 2.4s;
