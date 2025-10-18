@@ -279,6 +279,48 @@ body {
     animation-delay: 1.5s, 2.4s;
 }
 
+.barrel_roll {
+    animation-name: animation-spin, animation-from-left-1;
+    animation-duration: 0.5s, 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    height: 80px;
+    aspect-ratio: 1 / 1;
+}
+
+.barrel_roll.spin-1 {
+    animation-name: animation-spin, animation-from-left-1;
+}
+
+.barrel_roll.spin-2 {
+    animation-name: animation-spin, animation-from-left-2;
+}
+
+.barrel_roll.spin-3 {
+    animation-name: animation-spin, animation-from-left-3;
+}
+
+.barrel_roll.spin-4 {
+    animation-name: animation-spin, animation-from-left-4;
+}
+
+.barrel_roll.spin-5 {
+    animation-name: animation-spin, animation-from-right-1;
+}
+
+.barrel_roll.spin-6 {
+    animation-name: animation-spin, animation-from-right-2;
+}
+
+.barrel_roll.spin-7 {
+    animation-name: animation-spin, animation-from-right-3;
+}
+
+.barrel_roll.spin-8 {
+    animation-name: animation-spin, animation-from-right-4;
+}
+
 @keyframes alert-animation-slide-in-left {
     0% {
         left: -100%;
@@ -312,5 +354,102 @@ body {
     }
     100% {
         left: 100%;
+    }
+}
+
+@keyframes animation-spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes animation-from-left-1 {
+    0% {
+        top: 0%;
+        left: -30%;
+    }
+    100% {
+        top: 100%;
+        left: 130%;
+    }
+}
+
+@keyframes animation-from-left-2 {
+    0% {
+        top: 30%;
+        left: -30%;
+    }
+    100% {
+        top: 70%;
+        left: 130%;
+    }
+}
+
+@keyframes animation-from-left-3 {
+    0% {
+        top: 70%;
+        left: -30%;
+    }
+    100% {
+        top: 30%;
+        left: 130%;
+    }
+}
+
+@keyframes animation-from-left-4 {
+    0% {
+        top: 100%;
+        left: -30%;
+    }
+    100% {
+        top: 0%;
+        left: 130%;
+    }
+}
+
+@keyframes animation-from-right-1 {
+    0% {
+        top: 100%;
+        left: 130%;
+    }
+    100% {
+        top: 0%;
+        left: -30%;
+    }
+}
+
+@keyframes animation-from-right-2 {
+    0% {
+        top: 70%;
+        left: 130%;
+    }
+    100% {
+        top: 30%;
+        left: -30%;
+    }
+}
+
+@keyframes animation-from-right-3 {
+    0% {
+        top: 30%;
+        left: 130%;
+    }
+    100% {
+        top: 70%;
+        left: -30%;
+    }
+}
+
+@keyframes animation-from-right-4 {
+    0% {
+        top: 0%;
+        left: 130%;
+    }
+    100% {
+        top: 100%;
+        left: -30%;
     }
 }
