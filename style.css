@@ -1,3 +1,7 @@
+:root {
+    --text-margin-base: 1em;
+}
+
 html {
 	overflow: hidden;
 	height: 100%;
@@ -61,6 +65,8 @@ body {
 
 .alert_widget-container {
 	display: flex;
+    align-items: center;
+    justify-content: center;
 	background-color: #FFFFFF00;
 	width: 100%;
 	height: 100%;
@@ -84,9 +90,10 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    width: 100%;
+	width: calc(100% - 0.5em);
+	height: calc(100% - 0.5em);
     position: relative;
-    margin: 10px;
+    margin: var(--text-margin-base);
     z-index: 1;
     max-height: 100%;
     max-width: 100%;
@@ -106,7 +113,6 @@ body {
     font-size: 28px;
     font-weight: 600;
     color: #969696;
-	width: 100%;
 }
 
 .alert_secondary-text {
@@ -141,6 +147,28 @@ body {
 @media (width:567) and (height:100px) {
     .alert_widget-container {
         background-image: url("https://static-cdn.jtvnw.net/alert-asset/v2/47243772/image/2hSmkEQUS7Lgy5Gy3XzYGgZgrzK/Alert_Background_3_2.png");
+    }
+}
+
+@media (width:308px) and (height:428px) {
+    .alert_widget-container {
+        background-image: url("https://static-cdn.jtvnw.net/alert-asset/v2/47243772/image/3AROhhOmPz6QsgQLdniqf04peET/Overlay-ds_alert-background.png");
+    }
+    .alert_outer-container.playing {
+        animation-name: alert-animation-slide-in-top, alert-animation-slide-out-top;
+    }
+}
+
+@media (width:900px) and (height:250px) {
+    .alert_widget-container {
+        background-image: url("https://static-cdn.jtvnw.net/alert-asset/v2/47243772/image/3ARTG0G5Cz0OuxTds6hcPyN3eit/Alert-background-webcam.png");
+    }
+    .alert_outer-container.playing {
+        animation-name: alert-animation-slide-in-right, alert-animation-slide-out-right;
+    }
+    .alert_text-container {
+        margin-bottom: calc(var(--text-margin-base) + 12px);
+        margin-left: calc(var(--text-margin-base) + 12px);
     }
 }
 
@@ -281,7 +309,7 @@ body {
 
 .barrel_roll {
     animation-name: animation-spin, animation-from-left-1;
-    animation-duration: 0.5s, 2s;
+    animation-duration: 0.5s, 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: relative;
@@ -339,6 +367,15 @@ body {
     }
 }
 
+@keyframes alert-animation-slide-in-top {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 @keyframes alert-animation-slide-out-left {
     0% {
         left: 0;
@@ -354,6 +391,15 @@ body {
     }
     100% {
         left: 100%;
+    }
+}
+
+@keyframes alert-animation-slide-out-top {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
     }
 }
 
